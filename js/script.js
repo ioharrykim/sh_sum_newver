@@ -16,12 +16,12 @@
     function bannerSum() {
         var bannerVal = $("[name=bannersum]").val();
         console.log(bannerVal);
-        var banner1ValSum = (bannerVal.match(/013293/g) || []).length;
-        var banner3ValSum = (bannerVal.match(/213&page=1/g) || []).length;
+        var banner1ValSum = (bannerVal.match(/D00717/g) || []).length;
+        var banner3ValSum = (bannerVal.match(/service-implants/g) || []).length;
         var banner4ValSum = (bannerVal.match(/19971/g) || []).length;
         var banner5ValSum = (bannerVal.match(/19971/g) || []).length;
         var banner6ValSum = (bannerVal.match(/25910/g) || []).length;
-        var banner7ValSum = (bannerVal.match(/25908/g) || []).length;
+        var banner7ValSum = (bannerVal.match(/바이트코핑&page=1/g) || []).length;
         var banner8ValSum = (bannerVal.match(/25916/g) || []).length;
         $('div.banner1 > p').text(banner1ValSum);
         $('div.banner2 > p').text(banner1ValSum);
