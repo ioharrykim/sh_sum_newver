@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>sh_sum</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-wrap">
+            <div class="site-wrap">
+                <div class="site-flex-box">
+                    <div class="apisite">
+                        <h3>집계를 볼 날짜<span>( 00-00 형식으로 입력 ex> 02-01 )</span></h3>
+                        <div class="datebox">
+                            <textarea name="ondate" id="ondate" cols="15" rows="1"></textarea>
+                            <button type="button" id="apibutton">사이트 링크 생성</button>
+                        </div>
+                        <div class="apilogin">
+                            <h6>로그인 API</h6>
+                            <p></p>
+                            <a href="#" target="_blank">생성되면 클릭하세요</a>
+                        </div>
+                        <div class="apibanner">
+                            <h6>배너 API</h6>
+                            <p></p>
+                            <a href="#" target="_blank">생성되면 클릭하세요</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-wrap">
+                <div class="login">
+                    <h4>로그인 계정 집계</h4>
+                    <textarea name="loginsum" id="loginsum" cols="15" rows="10"
+                        placeholder="생성된 로그인 API의 내용을 전체 붙여넣기 하세요"></textarea>
+                    <div class="loginbutton">
+                        <button type="button" id="login1">로그인 계정 수</button>
+                        <p>클릭하면 결과가 나타납니다</p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-wrap">
+                <div class="banner">
+                    <h4>배너 클릭 집계</h4>
+                    <textarea name="bannersum" id="bannersum" cols="15" rows="10"
+                        placeholder="생성된 배너 API의 내용을 전체 붙여넣기 하세요"></textarea>
+                    <div class="bannerbutton-wrap">
+                        <button type="button" id="button1">배너 클릭 수</button>
+                        <div class="bannerans-wrap">
+                            <div class="banner1">
+                                <h4>배너1의 개수<br><span>(2의 값과 같으니 1-5정도로 분배)</span> </h4>
+                                <p></p>
+                            </div>
+                            <div class="banner2">
+                                <h4>배너2의 개수</h4>
+                                <p></p>
+                            </div>
+                            <div class="banner3">
+                                <h4>배너3의 개수</h4>
+                                <p></p>
+                            </div>
+                            <div class="banner4">
+                                <h4>배너4의 개수<br><span>(5의 값과 같으니 4의 값을 더 높게해서 분배)</span></h4>
+                                <p></p>
+                            </div>
+                            <div class="banner5">
+                                <h4>배너5의 개수</h4>
+                                <p></p>
+                            </div>
+                            <div class="banner6">
+                                <h4>배너6의 개수</h4>
+                                <p></p>
+                            </div>
+                            <div class="banner7">
+                                <h4>배너7의 개수</h4>
+                                <p></p>
+                            </div>
+                            <div class="banner8">
+                                <h4>배너8의 개수</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="main-wrap">
+            <div class="apisite">
+                <h3>집계를 볼 날짜<span>( 00-00 형식으로 입력 ex> 02-01 )</span></h3>
+                <div class="datebox">
+                    <textarea name="ondate" id="ondate" cols="30" rows="1"></textarea>
+                    <button type="button" id="apibutton">사이트 링크 생성</button>
+                </div>
+                <div class="apilogin">
+                    <h6>로그인 API</h6><p></p>
+                    <a href="#" target="_blank">생성되면 클릭하세요</a>
+                </div>
+                <div class="apibanner">
+                    <h6>배너 API</h6><p></p>
+                    <a href="#" target="_blank">생성되면 클릭하세요</a>
+                </div>
+            </div>
+            <div class="anssection">
+                <div class="login">
+                    <h4>로그인 계정 집계</h4>
+                    <textarea name="loginsum" id="loginsum" cols="50" rows="10" placeholder="생성된 로그인 API의 내용을 전체 붙여넣기 하세요"></textarea>
+                    <div class="loginbutton">
+                        <button type="button" id="login1">로그인 계정 수</button>
+                        <p>클릭하면 결과가 나타납니다</p>
+                    </div>
+                </div>
+                <div class="banner">
+                    <h4>배너 클릭 집계</h4>
+                    <textarea name="bannersum" id="bannersum" cols="50" rows="10" placeholder="생성된 배너 API의 내용을 전체 붙여넣기 하세요"></textarea>
+                    <div class="bannerbutton-wrap">
+                        <button type="button" id="button1">배너 클릭 수</button>
+                        <div class="bannerans-wrap">
+                            <div class="banner1">
+                                <h4>배너1의 개수<br><span>(2의 값과 같으니 1-5정도로 분배)</span> </h4><p></p>
+                            </div>
+                            <div class="banner2">
+                                <h4>배너2의 개수</h4><p></p>
+                            </div>
+                            <div class="banner3">
+                                <h4>배너3의 개수</h4><p></p>
+                            </div>
+                            <div class="banner4">
+                                <h4>배너4의 개수<br><span>(5의 값과 같으니 4의 값을 더 높게해서 분배)</span></h4><p></p>
+                            </div>
+                            <div class="banner5">
+                                <h4>배너5의 개수</h4><p></p>
+                            </div>
+                            <div class="banner6">
+                                <h4>배너6의 개수</h4><p></p>
+                            </div>
+                            <div class="banner7">
+                                <h4>배너7의 개수</h4><p></p>
+                            </div>
+                            <div class="banner8">
+                                <h4>배너8의 개수</h4><p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div> -->
+    </div>
+
+
+    <!--script-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer type="text/javascript" src="./js/find.js"></script>
+    <script defer type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>

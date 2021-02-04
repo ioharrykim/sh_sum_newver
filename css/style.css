@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    /* background-image: url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-position: center; */
+    background-color: #f1f1f1;
+}
+
+#bannersum, #loginsum {
+    width: 300px;
+}
+#ondate {
+    width: 150px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+
+}
+.site-wrap, .login-wrap, .banner-wrap  {
+    background-color: #fff;
+    width: 400px;
+    height: 800px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 30px #e0e0e0;
+}
+.site-wrap {
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+.apisite {
+    text-align: center;
+    margin: 50px auto;
+}
+.apisite h3 {
+    color: darkblue;
+    margin-bottom: 20px;
+}
+.apisite > h3 span {
+    font-size: 0.8rem;
+    color: #606060;
+    margin-left: 20px;
+}
+.datebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.datebox textarea {
+    height: 20px;
+}
+.datebox button {
+    height: 27px;
+    margin-left: 10px;
+    background-color: rgb(123, 123, 255);
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.loginbutton button, .bannerbutton-wrap button {
+    height: 27px;
+    margin-left: 10px;
+    background-color: rgb(255, 123, 123);
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.anssection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.banner {
+    width: 400px;
+    text-align: center;
+    color: darkblue;
+}
+.login {
+    width: 400px;
+    text-align: center;
+    color: darkblue;
+}
+.banner textarea {
+    margin: 30px auto;
+}
+.login textarea {
+    margin: 30px auto;
+}
+.bannerans-wrap {
+    text-align: left;
+    width: 350px;
+    margin: 30px auto;
+    border: 1px solid #b6b6b6;
+}
+.loginbutton p {
+    color: darkred;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.bannerans-wrap p, .apilogin a, .apibanner a {
+    text-align: right;
+    color: darkred;
+    font-weight: 700;
+}
+.banner1 span, .banner4 span {
+    font-size: 0.7rem;
+    color: #606060;
+}
+.banner1, .banner2, .banner3, .banner4, .banner5, .banner6, .banner7, .banner8 {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.banner1, .banner3, .banner5, .banner7 {
+    background-color: #f1f1f1;
+}
+.banner2, .banner4, .banner6, .banner8 {
+    background-color: #dddddd;
+}
+textarea {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #606060;
+}
+
+
+/* 반응형 */
+
+/* 768 to 1024 TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+/* 0 to 767px MOBILE */
+@media (max-width: 768px) {
+    .anssection {
+        display: block;
+        margin: 0 auto;
+    }
+    .main-container {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+    .main-wrap {
+        display: block;
+        /* width: 100vw; */
+        margin: 0 auto;
+    }
+    .site-wrap {
+        margin-right: 0px;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .login-wrap {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .banner-wrap {
+        margin: 50px 0;
+    }
+    #bannersum, #loginsum {
+        width: 230px;
+    }
+    #ondate {
+        width: 100px;
+    }
+}   
