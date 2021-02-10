@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    /* background-image: url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-position: center; */
+    background-color: #f1f1f1;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin-top: 50px;
+}
+
+.ex-log-area {
+    width: 800px;
+    height: 600px;
+}
+
+.ex-log-area p {
+    font-size: 0.1rem;
+}
+
+
+#new-log {
+    width: 500px;
+    height: 500px;
+}
+
+/* 반응형 */
+
+/* 768 to 1024 TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+/* 0 to 767px MOBILE */
+@media (max-width: 768px) {
+    .anssection {
+        display: block;
+        margin: 0 auto;
+    }
+    .main-container {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+    .main-wrap {
+        display: block;
+        /* width: 100vw; */
+        margin: 0 auto;
+    }
+    .site-wrap {
+        margin-right: 0px;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .login-wrap {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .banner-wrap {
+        margin: 50px 0;
+    }
+    #bannersum, #loginsum {
+        width: 230px;
+    }
+    #ondate {
+        width: 100px;
+    }
+}   

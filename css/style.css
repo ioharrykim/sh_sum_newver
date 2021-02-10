@@ -88,6 +88,16 @@ html {
     font-size: 0.8rem;
     cursor: pointer;
 }
+.login a {
+    color: darkred;
+    font-weight: 700;
+}
+.login a:hover {
+    color: darkblue;
+}
+.loginbutton {
+    margin-bottom: 100px;
+}
 .loginbutton button, .bannerbutton-wrap button {
     height: 27px;
     margin-left: 10px;
@@ -160,7 +170,6 @@ textarea {
     text-align: center;
     color: #606060;
 }
-
 
 /* 반응형 */
 
